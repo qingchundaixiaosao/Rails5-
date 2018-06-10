@@ -10,7 +10,8 @@
 
 <body class='<%= controller.controller_name %>'>
 <div id="banner">
-  <%= image_tag 'logo.jpeg', alt: 'The Pragmtic Bookshelf' %>
+  <%#= image_tag 'logo.jpeg', alt: 'The Pragmtic Bookshelf' %>
+  <div>当前时间：<%= Time.now.strftime("%Y-%m-%d %H:%M:%S") %></div>
   <span class="title"><%= @page_title %></span>
 </div>
 <div id="columns">
